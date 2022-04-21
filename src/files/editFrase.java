@@ -1,8 +1,6 @@
 package files;
 
-import java.util.Locale;
-
-public class ediitFrase {
+public class editFrase {
     public static void main(String[] args) {
         String resultado = "", frase = "cada pueblo o nación tiene el gobierno que se merece";
         frase = frase.toLowerCase();
