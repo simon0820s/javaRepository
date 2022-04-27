@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Producto {
-    private String[] productos= new String[1];
+    private ArrayList productos;
 
     public Producto(){
     }
@@ -13,7 +13,6 @@ public class Producto {
         ArrayList productos = new ArrayList();
         int c=0;
         boolean bucle = true;
-        System.out.println("a continuación ingrese los productos iniciales para crear el inventario");
         System.out.println("");
         while (bucle == true) {
             try {
@@ -33,6 +32,11 @@ public class Producto {
                 String p = prod.nextLine();
                 productos.add(p);
         }
+        this.productos=productos;
         return productos;
+    }
+    public ArrayList getProductos(){
+        ArrayList copia = productos;
+        return copia;
     }
 }

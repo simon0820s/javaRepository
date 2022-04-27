@@ -19,15 +19,17 @@ public class Carrito {
         System.out.println("Pedido:");
         System.out.println("");
 
-        System.out.println("de cuantos productos consta el pedido ?");
         while(bucle==true){
             try{
                 Scanner ent = new Scanner(System.in);
+                System.out.println("de cuantos productos consta el pedido ?");
                 cantidad= ent.nextInt();
             }
             catch (Exception e){
                 System.out.println("En este campo unicamente puedes ingresar numeros enteros");
                 System.out.println("");
+                System.out.println("");
+                continue;
             }
             for (int i =0;i<cantidad;i++){
                 Scanner ent = new Scanner(System.in);
